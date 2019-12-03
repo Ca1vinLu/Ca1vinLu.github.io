@@ -120,7 +120,7 @@
 <meta property="og:image" content="http://sf1-vcloudcdn.pstatp.com/img/tos-cn-i-0000/f1aee4a872a148928a4a480ce77de3cf~tplv-noop.image?width=586&height=1330">
 <meta property="og:image" content="http://sf1-vcloudcdn.pstatp.com/img/tos-cn-i-0000/f80bca90b19d486fa9e5db59f42f1482~tplv-noop.image?width=950&height=1068">
 <meta property="og:image" content="http://sf1-vcloudcdn.pstatp.com/img/tos-cn-i-0000/6bc12a8f3f2f4475a92fa86f314c9a77~tplv-noop.image?width=900&height=1090">
-<meta property="og:updated_time" content="2019-12-03T11:35:00.175Z">
+<meta property="og:updated_time" content="2019-12-03T12:03:22.316Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅析Android Gradle构建流程">
 <meta name="twitter:description" content="浅析Android Gradle构建流程概述Gradle是一个基于Apache Ant和Apache Maven概念的项目自动化构建开源工具，它通过组织执行一系列的Task来完成自动化的构建，减少构建项目时的复杂度，而Android Studio也使用Gradle作为基础的构建工具。 Gradle自身是用Groovy和Java进行开发的，同时Gradle脚本使用基于Groovy的特定领域语言(DS">
@@ -354,7 +354,7 @@
                 
               
 
-              <time title="创建时间：2019-12-03 17:27:15 / 修改时间：19:35:00" itemprop="dateCreated datePublished" datetime="2019-12-03T17:27:15+08:00">2019-12-03</time>
+              <time title="创建时间：2019-12-03 17:27:15 / 修改时间：20:03:22" itemprop="dateCreated datePublished" datetime="2019-12-03T17:27:15+08:00">2019-12-03</time>
             
 
             
@@ -412,6 +412,7 @@
       
         <h1 id="浅析Android-Gradle构建流程"><a href="#浅析Android-Gradle构建流程" class="headerlink" title="浅析Android Gradle构建流程"></a>浅析Android Gradle构建流程</h1><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>Gradle是一个基于Apache Ant和Apache Maven概念的项目自动化构建开源工具，它通过组织执行一系列的Task来完成自动化的构建，减少构建项目时的复杂度，而Android Studio也使用Gradle作为基础的构建工具。</p>
 <p>Gradle自身是用Groovy和Java进行开发的，同时Gradle脚本使用基于Groovy的特定领域语言(DSL)来声明项目配置，不用像Maven/Ant那样基于XML来进行各种繁琐的配置。目前也增加了基于Kotlin语言的Kotlin DSL，因为是Jetbrains自家的语言，所以IDE支持也会更加完善</p>
+<a id="more"></a>
 <h1 id="Gradle-项目结构分析"><a href="#Gradle-项目结构分析" class="headerlink" title="Gradle 项目结构分析"></a>Gradle 项目结构分析</h1><p>在了解Gradle build的生命周期之前，先简单说一下Gradle的项目层次，新建一个Android工程，可以看到项目的结构大致如下：</p>
 <p><img src="http://sf1-vcloudcdn.pstatp.com/img/tos-cn-i-0000/c7817734afb64081a63e2c76f15f56d0~tplv-noop.image?width=872&amp;height=810" alt="image.png"></p>
 <h2 id="settings-gradle"><a href="#settings-gradle" class="headerlink" title="settings.gradle"></a>settings.gradle</h2><p>settings.gradle是用于配置整个项目结构的脚本，对应Gradle中的<code>Settings</code>对象，其中最常用的几个方法：</p>
